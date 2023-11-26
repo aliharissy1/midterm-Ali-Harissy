@@ -16,17 +16,17 @@ open_Tab("alfi", "https://youtube.com")
 
 print(thisBrowser)
 
-# def close_tab(index):
-#     i = 0
-#     for key in thisBrowser.keys():
-#         if i == index:
-#             key_to_delete = key
-#         i = i + 1
-#     if key_to_delete in thisBrowser:
-#         del thisBrowser[key_to_delete]
-#
-# def close_tab():
-#     thisBrowser.popitem()
+def close_tab(index):
+    i = 0
+    for key in thisBrowser.keys():
+        if i == index:
+            key_to_delete = key
+        i = i + 1
+    if key_to_delete in thisBrowser:
+        del thisBrowser[key_to_delete]
+
+def close_tab():
+    thisBrowser.popitem()
 #
 #
 # close_tab()
