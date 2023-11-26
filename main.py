@@ -27,35 +27,35 @@ def close_tab(index):
 
 def close_tab():
     thisBrowser.popitem()
-#
-#
-# close_tab()
-# print(thisBrowser)
 
-# def switchTabs(index):
-#     i = 0
-#     for key, value in thisBrowser.items():
-#         if i == index:
-#             value_to_open = value
-#         i = i + 1
-#     page = urlopen(value_to_open)
-#
-#     html_bytes = page.read()
-#     html = html_bytes.decode("utf-8")
-#     print(html)
-#
-# def switchTabs():
-#     i = 0
-#     for key, value in thisBrowser.items():
-#         value_to_open = value
-#         i = i + 1
-#     page = urlopen(value_to_open)
-#
-#     html_bytes = page.read()
-#     html = html_bytes.decode("utf-8")
-#     print(html)
-#
-# switchTabs()
+
+close_tab()
+print(thisBrowser)
+
+def switchTabs(index):
+    i = 0
+    for key, value in thisBrowser.items():
+        if i == index:
+            value_to_open = value
+        i = i + 1
+    page = urlopen(value_to_open)
+
+    html_bytes = page.read()
+    html = html_bytes.decode("utf-8")
+    print(html)
+
+def switchTabs():
+    i = 0
+    for key, value in thisBrowser.items():
+        value_to_open = value
+        i = i + 1
+    page = urlopen(value_to_open)
+
+    html_bytes = page.read()
+    html = html_bytes.decode("utf-8")
+    print(html)
+
+switchTabs()
 
 
 
